@@ -1,6 +1,6 @@
 body {
     margin: 20px;
-    font-family: Cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Delius, cursive, sans-serif;
 }
 
 .img-agusha {
@@ -13,7 +13,8 @@ body {
 }
 
 .card {
-    width: 450px;
+    max-width: 450px;
+    width: 90%;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -23,6 +24,13 @@ body {
     border-bottom: 6px solid #9a8c98;
     color: #22223b;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card:hover {
@@ -48,7 +56,7 @@ body {
 }
 
 #demo {
-    font-family: cursive;
+    font-family: Delius, cursive, sans-serif;
     color: #333;
 }
 
